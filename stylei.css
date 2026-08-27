@@ -1,0 +1,367 @@
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f7fa;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background: #071952;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 20, 60, 0.75),
+            rgba(0, 20, 60, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1564981797816-1043664bf78d")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    background: #00a8ff;
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0077b6;
+    transform: translateY(-3px);
+}
+
+
+/* General Sections */
+
+.section {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    color: #071952;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 45px;
+}
+
+
+/* Feature Cards */
+
+.cards {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #071952;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* Facilities */
+
+.facilities {
+    background: #071952;
+    color: white;
+
+    padding: 80px 30px;
+}
+
+.facility-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.facility-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.facility-text p {
+    margin-bottom: 25px;
+}
+
+.facility-text ul {
+    list-style: none;
+}
+
+.facility-text li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.facility-box {
+    background: white;
+    color: #222;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.facility-box h3 {
+    font-size: 30px;
+    color: #071952;
+    margin-bottom: 15px;
+}
+
+.facility-box p {
+    margin-bottom: 25px;
+}
+
+
+/* About */
+
+.about {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 18px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #eaf6ff;
+}
+
+.contact h2 {
+    color: #071952;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #030b2e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
